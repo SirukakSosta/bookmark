@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { TopMenuComponent } from './top-menu/top-menu.component';
+import { BookmarkComponent } from './bookmark/bookmark.component';
+import { TagComponent } from './tag/tag.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenuComponent
+    BookmarkComponent,
+    TagComponent,
   ],
   imports: [
     BrowserModule
