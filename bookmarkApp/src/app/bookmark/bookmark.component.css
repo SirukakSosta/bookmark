@@ -6,3 +6,8 @@
   cursor: pointer;
   transition:all 0.5s ease-in-out;
 }
+.bookmark-box-hover {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 1vw;
+}

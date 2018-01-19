@@ -16,12 +16,16 @@
      </li>
   </ul>
   <hr>
-  <div *ngIf="selectedBookmark">
-  <h4>URL: {{ selectedBookmark.url}}</h4>
-  <div><span>id: </span>{{selectedBookmark.descreption}}</div>
+  <div *ngIf="selectedBookmark" class="bookmark-box-hover">
+  <h4>ID: {{ selectedBookmark.id}}</h4>
+  <div><span>Descreption: </span>{{selectedBookmark.descreption}}</div>
+  <div><span>Author: </span>{{selectedBookmark.author}}</div>
   <div>
-    <label>URL:
-      <input [(ngModel)]="selectedBookmark.url" placeholder="name">
-    </label>
+    <div class="input-group input-group-sm mb-3">
+       <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">url: </span>
+       </div>
+         <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="selectedBookmark.url" placeholder="name">
+    </div>
   </div>
 </div>
