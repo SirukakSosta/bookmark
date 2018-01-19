@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Bookmark } from '../bookmark';
+import { BOOKMARKS } from '../bookmarks';
+
 
 @Component({
   selector: 'app-bookmark',
@@ -7,16 +9,19 @@ import { Bookmark } from '../bookmark';
   styleUrls: ['./bookmark.component.css']
 })
 export class BookmarkComponent implements OnInit {
-  bookmark : Bookmark = {
-    id: 1,
-    url: "www.facebook.com",
-    descreption: "This is a descreption",
-    author: "SiroukaK SostA"
-  }
+
+  bookmarks = BOOKMARKS;
+
+  selectedBookmark: Bookmark;
+
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSelect(bookmark: Bookmark): void{
+    this.selectedBookmark = bookmark;
+  }
 }

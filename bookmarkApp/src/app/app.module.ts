@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { TagComponent } from './tag/tag.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { TagComponent } from './tag/tag.component';
     TagComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

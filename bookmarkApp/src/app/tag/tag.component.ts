@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Tag } from '../tag';
+import { TAGS } from '../tags';
 
 @Component({
   selector: 'app-tag',
@@ -9,15 +10,7 @@ import { Tag } from '../tag';
 export class TagComponent implements OnInit {
 
 
-
-
-
-
-
-  tag : Tag = {
-    id: 1,
-    name: "codepen"
-  }
+  tags = TAGS;
 
   constructor() { }
 

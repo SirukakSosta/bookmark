@@ -1,2 +1,13 @@
-<div><span>id: </span>{{ tag.id }}</div>
-<div><span>name: </span>{{ tag.name }}</div>
+<h4>Tags</h4>
+<div class="input-group input-group-sm mb-3">
+   <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-plus" aria-hidden="true"></i></span>
+   </div>
+   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+<ul class="list-group" *ngFor="let tag of tags">
+   <li class="list-group-item justify-content-between">
+      {{tag.name}}
+      <span class="badge badge-default badge-pill">14</span>
+   </li>
+</ul>

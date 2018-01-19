@@ -1,0 +1,8 @@
+.bookmark-kek{
+    transition:all 0.5s ease-in-out;
+}
+.bookmark-kek:hover{
+  background: #b5b5e2;
+  cursor: pointer;
+  transition:all 0.5s ease-in-out;
+}
